@@ -1,0 +1,110 @@
+body{
+    background: linear-gradient(white, black);
+    background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+    color: rgb(0, 0, 0);
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+
+blockquote{
+    font-size: large;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px black 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+      text-shadow: 0 0 20px black, 0 0 30px white, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+a{
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+#navbar a:hover{
+    color: darksalmon;
+    transition: .15s;
+}
+
+.picture {
+    padding-top: 5%;
+    position: relative;
+    width: 100%;
+    }
+    .picture-image {
+    border-radius: 290486px;
+    position: absolute;
+}
+
+
+#sidebar{
+    float: right;
+    margin-top: 2%;
+    width: 40%; 
+    height: 50vh;
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .content {
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 4rem;
+    }
+    .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 4rem;
+    order: 2;
+    width: 20rem;
+    }
+    .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+    }
+}
+
+#footer{
+    text-align: right;
+    color: white;
+    margin-top: 100px;
+}

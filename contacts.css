@@ -1,0 +1,152 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+body{
+    background: linear-gradient(white, black);
+    background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+    color: rgb(0, 0, 0);
+    font-family: "Quicksand", sans-serif;
+    font-size: 16px;
+}
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+
+a{
+    float: left;
+    width: 50%;
+    height: 50%;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+#navbar a:hover{
+    color: darksalmon;
+    transition: .15s;
+}
+
+#sidebar{
+    float: right;
+    margin-top: 2%;
+    width: 40%; 
+    height: 50vh;
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .content {
+    align-items: center;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 4rem;
+    }
+    .side {
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 20rem;
+    margin-left: 4rem;
+    order: 2;
+    width: 20rem;
+    }
+    .about {
+    flex-grow: 1;
+    flex-shrink: 1;
+    }
+}
+
+#footer{
+    text-align: right;
+    color: white;
+    margin-top: 100px;
+}
+
+.sidebar ul{
+    float: center;
+    position: relative;
+    top:15%;
+    left:60%;
+    transform: translate(-50%, -50%);
+    margin:0;
+    padding:0;
+}
+  
+.sidebar ul li {
+    list-style: none;
+}
+  
+.sidebar ul li a {
+    position: relative;
+    width:60px;
+    height:60px;
+    display:block;
+    text-align:center;
+    margin:0 10px;
+    border-radius: 50%;
+    padding: 6px;
+    box-sizing: border-box;
+    text-decoration:none;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    background: linear-gradient(0deg, #ddd, #fff);
+    transition: .5s;
+}
+  
+.sidebar ul li a:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    text-decoration:none;
+}
+  
+.sidebar ul li a .fa{
+    width: 100%;
+    height:100%;
+    display:block;
+    background: linear-gradient(0deg, #fff, #ddd);
+    border-radius: 50%;
+    line-height: calc(60px - 12px);
+    font-size:24px;
+    color: #262626;
+    transition: .5s;
+}
+  
+.sidebar ul li:nth-child(2) a:hover .fa{
+    color: #3b5998;
+}
+  
+.sidebar ul li:nth-child(3) a:hover .fa{
+    color: #00aced;
+}
+  
+.sidebar ul li:nth-child(4) a:hover .fa{
+    color: red;
+}
+  
+.sidebar ul li:nth-child(5) a:hover .fa{
+    color: #007bb6;
+}
+  
+.sidebar ul li:nth-child(6) a:hover .fa{
+    color: #e4405f;
+}
